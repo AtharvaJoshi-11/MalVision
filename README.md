@@ -6,15 +6,18 @@ The proposed work is used for classification of malware images obtained from Mal
 Malevis dataset involves totally 9100 training and 5126 validation RGB images. All the training classes involve 350 image samples while validation set have various number of images.
 The RGB images are converted into grayscale images to reduce better computational complexity of image processing as it involves only a single channel instead of three. 
 
-
-## Model Architecture
-
-![Image alt text](images/Malvision-architecture.JPG)
-
 ## Data Visualization
 
 ![Image alt text](images/Malvision-images.JPG)
 The performance of the model is : Training accuracy - 98.9% , Validation accuracy - 87 %
 
-### The model has been tested on real-time backdoor executables prepared using meterpreter reverse-shell-http payload which is represented in the form of a byte image
+## Model Architecture
 
+![Image alt text](images/Malvision-architecture.JPG)
+
+
+
+## Future Scope
+
+One of the major future advancements in this work can be to feed the neural network with Binary Executables which are converted into binary images as a part of the preprocessing
+and detect whether the executable can produce a backdoor attack on target computer.
